@@ -1,4 +1,5 @@
 package Conditional_Loops;
+
 import java.util.Scanner;
 
 public class isPrime {
@@ -6,20 +7,21 @@ public class isPrime {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter any number : ");
         int num = in.nextInt();
-        in.close();  
-        System.out.println((findPrime(num)==1) ? "Prime" : "Not prime");
+        in.close();
+        System.out.println(findPrime(num) ? "Prime" : "Not prime");
     }
-    static int findPrime(int n){
-        int i = 2;
-        if (n==0 || n==1) {
-            return -1;
+
+    static boolean findPrime(int n) {
+        if (n == 0 || n == 1) {
+            return false;
         }
-        while (i<n){
-            if (n%i==0){
-                return -1;
+        int i = 2;
+        while (i < n) {
+            if (n % i == 0) {
+                return false;
             }
             i++;
         }
-        return 1;
+        return true;
     }
 }

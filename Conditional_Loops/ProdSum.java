@@ -1,5 +1,7 @@
 package Conditional_Loops;
+
 import java.util.Scanner;
+
 //return digitProd-digitSum where digitProd is product of 
 // digit and digitSum is sum of digit of number
 

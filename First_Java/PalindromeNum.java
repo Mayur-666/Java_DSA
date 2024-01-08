@@ -1,4 +1,5 @@
 package First_Java;
+
 import java.util.Scanner;
 
 public class PalindromeNum {
@@ -6,18 +7,16 @@ public class PalindromeNum {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter any number : ");
         int num = in.nextInt();
-        int temp = num;
-        int newNum = 0;
-        int len = ((Integer) temp).toString().length();
+        int temp = num, newNum = 0;
 
-        while (temp>0){
-            int rem = temp%10;
-            temp = temp/10;
-            newNum += rem*(Math.pow(10, len-1));
-            len--;
+        // reversing the number
+        while (temp > 0) {
+            int rem = temp % 10;
+            temp = temp / 10;
+            newNum = newNum * 10 + rem;
         }
         in.close();
-        System.out.println(newNum==num ? "Number is palindrome" 
-        : "Number is not palindrome");
+        System.out.println(newNum == num ? "Number is palindrome."
+                : "Number is not palindrome.");
     }
 }
