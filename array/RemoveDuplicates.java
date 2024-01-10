@@ -1,5 +1,6 @@
 package array;
 
+//remove duplicates from sorted array
 public class RemoveDuplicates {
     public static void main(String[] args) {
         int[] arr = { 0, 0, 0, 1, 1, 1, 2, 2, 3, 3, 3, 3, 4 };
