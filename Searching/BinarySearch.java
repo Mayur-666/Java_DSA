@@ -1,6 +1,6 @@
 package Searching;
 
-// can be used only for sorted array
+// binary search for array sorted in ascending order
 public class BinarySearch {
     public static void main(String[] args) {
         int arr[] = {1,2,3,4,5,6,8,12,14,18,19,20};
