@@ -1,6 +1,6 @@
 package Searching;
 
-/*given 1 based indexing array find position of two elements that sum up to target */
+/* given 1 based indexing array find position of two elements that sum up to target */
 import java.util.Arrays;
 
 public class TwoSum {
